@@ -13,3 +13,23 @@ unlock the solenoid lock:
     People inside the room can exit the room at any time by just waving at the IR sensor attached to the solenoid. If we simply wave our hand near the IR sensor, it will detect the hand and trigger the solenoid lock immediately.
 
 The key feature about this project is to minimize the circuit only one 12v source was used and a 12v relay was used to act as a switch that controls the loads based upon vaious input sensors.
+
+Key Notes:
+ Voice Module:
+- Voice recognition module used is DFRobot Offline Voice Recognition Module.
+  link = https://www.dfrobot.com/product-2665.html
+  Documentation: https://www.electroniclinic.com/voice-recognition-module-with-arduino/#google_vignette
+- For voice module, communication protocal used id i2c.
+- The above documentation comprises DFRobot i2c and uart .py files to established communication with the module. Inside the DFRobot_DF2310Q-master folder the examples folders contains code the arduino code to use voice module for both i2c and uart. Under python-->raspberrypi-->examples folder have raspberry pi files for i2c and uart. Under python-->raspberry folder
+   file called DFRobot_DF2301Q.py is the main library. Make sure to have this library file and the main python code in the same folder.
+
+  RFID:
+ - For RFID Module make sure to install MFRC522 library and main code should be inside the folder containing SimpleMFRC522.py file.
+
+  Raspberry Pi:
+  For anyone just starting with raspberry pi,
+  - I have used raspberry pi 4 model B 8 gb ram.
+  - Upload the OS in a SD card first using PC. You can find OS in raspberry pi website.
+  - You can use raspberry pi in two way, first either use a monitor, wifi/ethernet cable, keyboard/mouse to use as a desktop or you can use a software like RealVNC Viewer to use it virtually. You can find tutorials online on how to set it up first time.
+  - I used thonny to write python codes in raspberry pi.
+  - CAUTION! Please be sure to shut down the raspberry pi if not working to prevent data corruption and back it up everynow and then.
