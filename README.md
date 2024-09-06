@@ -15,11 +15,12 @@ unlock the solenoid lock:
 The key feature about this project is to minimize the circuit only one 12v source was used and a 12v relay was used to act as a switch that controls the loads based upon vaious input sensors.
 
 Key Notes:
+
  Voice Module:
 - Voice recognition module used is DFRobot Offline Voice Recognition Module.
   link = https://www.dfrobot.com/product-2665.html
   Documentation: https://www.electroniclinic.com/voice-recognition-module-with-arduino/#google_vignette
-- For voice module, communication protocal used id i2c.
+- For voice module, communication protocal used is i2c.
 - The above documentation comprises DFRobot i2c and uart .py files to established communication with the module. Inside the DFRobot_DF2310Q-master folder the examples folders contains code the arduino code to use voice module for both i2c and uart. Under python-->raspberrypi-->examples folder have raspberry pi files for i2c and uart. Under python-->raspberry folder
    file called DFRobot_DF2301Q.py is the main library. Make sure to have this library file and the main python code in the same folder.
 
