@@ -17,17 +17,21 @@ The key feature about this project is to minimize the circuit only one 12v sourc
 Key Notes:
 
  Voice Module:
+ 
 - Voice recognition module used is DFRobot Offline Voice Recognition Module.
   link = https://www.dfrobot.com/product-2665.html
+  
   Documentation: https://www.electroniclinic.com/voice-recognition-module-with-arduino/#google_vignette
 - For voice module, communication protocal used is i2c.
 - The above documentation comprises DFRobot i2c and uart .py files to established communication with the module. Inside the DFRobot_DF2310Q-master folder the examples folders contains code the arduino code to use voice module for both i2c and uart. Under python-->raspberrypi-->examples folder have raspberry pi files for i2c and uart. Under python-->raspberry folder
    file called DFRobot_DF2301Q.py is the main library. Make sure to have this library file and the main python code in the same folder.
 
   RFID:
+  
  - For RFID Module make sure to install MFRC522 library and main code should be inside the folder containing SimpleMFRC522.py file.
 
   Raspberry Pi:
+  
   For anyone just starting with raspberry pi,
   - I have used raspberry pi 4 model B 8 gb ram.
   - Upload the OS in a SD card first using PC. You can find OS in raspberry pi website.
