@@ -38,3 +38,8 @@ Key Notes:
   - You can use raspberry pi in two way, first either use a monitor, wifi/ethernet cable, keyboard/mouse to use as a desktop or you can use a software like RealVNC Viewer to use it virtually. You can find tutorials online on how to set it up first time.
   - I used thonny to write python codes in raspberry pi.
   - CAUTION! Please be sure to shut down the raspberry pi if not working to prevent data corruption and back it up everynow and then.
+
+
+The demonstration of this prototype in action can be found in the following link:
+
+https://www.youtube.com/watch?v=IDkf7IWRkXg&t=88s
